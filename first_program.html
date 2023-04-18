@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h3>Álcool ou Gasolina?</h3>
+
+<hr><big>Visite o site Alura <a href="http://www.alura.com.br">aqui</a>!</big>
+
+<script>
+	function pulaLinha(){
+		document.write("<br><hr><br>");
+	}
+	
+	function mostrar(conteudo){
+		document.write(conteudo);
+		pulaLinha();
+	}
+	
+	alert("Programando!");
+
+	var tanque = 40;
+	var caminhoComGasolina = 480;
+	var consumoDeGasolina = caminhoComGasolina/tanque;
+	var caminhoComAlcool = 300;
+	var consumoDeAlcool = caminhoComAlcool/tanque;
+	
+	pulaLinha();
+	mostrar("480 km percorridos usando gasolina:");
+	mostrar("O consumo de gasolina é " + consumoDeGasolina + " km/l.");
+	mostrar("300 km percorridos usando álcool:");
+	mostrar("O consumo de álcool é " + consumoDeAlcool + " km/l.");
+</script>
